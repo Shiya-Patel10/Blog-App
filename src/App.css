@@ -1,0 +1,150 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body */
+body {
+  background: linear-gradient(to right, pink, rgb(167, 41, 62));
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #4f46e5, #6366f1);
+  color: white;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h2 {
+  font-weight: 600;
+  text-align: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 10px 20px;
+}
+
+/* Title */
+h1 {
+  margin-bottom: 25px;
+  color: #222;
+  text-align: center;
+  font: size 30px;
+  background-color: rgb(233, 229, 236);
+}
+
+/* Grid */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Card */
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Card Hover Effect */
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Title */
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* Text */
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Author */
+.card strong {
+  color: #4f46e5;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 14px;
+  background: linear-gradient(90deg, #4f46e5, #6366f1);
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Detail Page */
+.detail {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  margin-top: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.detail h1 {
+  margin-bottom: 15px;
+}
+
+.detail p {
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Footer */
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  padding: 18px;
+  background: #111827;
+  color: white;
+}
+/* Card Image */
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid red;
+  margin-bottom: 10px;
+}
