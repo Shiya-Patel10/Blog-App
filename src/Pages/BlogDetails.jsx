@@ -13,7 +13,7 @@ const BlogDetail = () => {
   useEffect(() => {
     fetchPostById(id)
       .then((data) => setPost(data))
-      .catch((err) => setError("Failed to load blog"))
+      .catch(() => setError("Failed to load blog"))
       .finally(() => setLoading(false));
   }, [id]);
 
