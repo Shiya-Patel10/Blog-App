@@ -1,7 +1,12 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
-const Footer = () => {
-  return <div>Footer</div>;
+const footer = () => {
+  return (
+    <nav>
+      <div className="navbar-Links">
+        <Link to="/">Copy Right </Link>
+      </div>
+    </nav>
+  );
 };
-
-export default Footer;
+export default footer;
