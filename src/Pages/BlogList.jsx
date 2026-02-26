@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { fetchPosts, fetchUsers } from "../services/api";
-import BlogCard from "../components/BlogCard";
+import BlogCard from "../componets/BlogCard";
 
 const BlogList = () => {
   const [posts, setPosts] = useState([]);
@@ -13,6 +13,9 @@ const BlogList = () => {
       try {
         const postsData = await fetchPosts();
         const usersData = await fetchUsers();
+
+        console.log("POSTS:", postsData);
+        console.log("USERS:", usersData);
 
         const userMap = {};
         usersData.forEach((u) => {

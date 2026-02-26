@@ -13,7 +13,7 @@ const BlogDetail = () => {
   useEffect(() => {
     fetchPostById(id)
       .then((data) => setPost(data))
-      .catch(() => setError("Failed to load blog"))
+      .catch((err) => setError("Failed to load blog"))
       .finally(() => setLoading(false));
   }, [id]);
 
@@ -27,6 +27,7 @@ const BlogDetail = () => {
       <button className="btn back-btn" onClick={() => navigate("/")}>
         ← Back
       </button>
+      <br />
 
       <div className="details">
         <img src={imageUrl} alt="blog" className="detail-img" />
