@@ -22,7 +22,7 @@ body {
   color: white;
   padding: 18px 40px;
   display: flex;
-  gap: 80px;
+  gap: 200px;
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
