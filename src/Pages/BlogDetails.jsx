@@ -24,16 +24,14 @@ const BlogDetail = () => {
 
   return (
     <div className="container">
-      <button className="btn back-btn" onClick={() => navigate("/")}>
-        ← Back
-      </button>
-      <br />
-
       <div className="details">
+        <button className="btn back-btn" onClick={() => navigate("/")}>
+          ← Back
+        </button>
+        <br />
         <img src={imageUrl} alt="blog" className="detail-img" />
 
         <h1>{post.title}</h1>
-
         <p className="content">{post.body}</p>
       </div>
     </div>
