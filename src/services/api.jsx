@@ -12,6 +12,7 @@ export const fetchPosts = async () => {
 };
 
 export const fetchPostById = async (id) => {
+  console.log("Test");
   try {
     const res = await fetch(`${BASE_URL}/posts/${id}`);
     if (!res.ok) throw new Error("Failed to fetch post");
